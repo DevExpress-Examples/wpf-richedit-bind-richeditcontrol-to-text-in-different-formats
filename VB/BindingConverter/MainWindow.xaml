@@ -1,0 +1,26 @@
+﻿<Window x:Class="BindingConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="800" 
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:dxre="http://schemas.devexpress.com/winfx/2008/xaml/richedit">
+    <!--region #1-->
+    <Window.Resources>
+        <dxre:ContentToPlainTextConverter x:Key="ContentPlainConverter" />
+        <dxre:RichEditUICommand x:Key="commands" />
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <dxb:BarManager Name="barManager1" Grid.Column="0"> 
+                        <dxre:RichEditControl x:Name="richEditControl1" Height="Auto" Width="Auto" 
+                           BarManager="{Binding ElementName=barManager1}" ActiveViewType="Simple" />
+        </dxb:BarManager>
+        <TextBox Text="{Binding ElementName=richEditControl1, Path=Content, Converter={StaticResource ContentPlainConverter}, Mode=OneWay}" 
+            x:Name="textBox1" Grid.Column="1" Height="Auto" Width="Auto" />
+    </Grid>
+    <!--endregion #1-->
+</Window>
