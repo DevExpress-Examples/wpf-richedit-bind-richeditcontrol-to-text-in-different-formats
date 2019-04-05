@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [MainWindow.xaml](./CS/BindingConverter/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/BindingConverter/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/BindingConverter/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/BindingConverter/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/BindingConverter/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/BindingConverter/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to implement a converter to bind RichEditControl to the text in different formats
