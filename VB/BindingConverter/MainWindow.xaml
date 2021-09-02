@@ -13,14 +13,14 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
-            <ColumnDefinition />
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <dxb:BarManager Name="barManager1" Grid.Column="0"> 
-                        <dxre:RichEditControl x:Name="richEditControl1" Height="Auto" Width="Auto" 
+                        <dxre:RichEditControl x:Name="richEditControl1"  Height="Auto" Width="Auto" 
                            BarManager="{Binding ElementName=barManager1}" ActiveViewType="Simple" />
         </dxb:BarManager>
         <TextBox Text="{Binding ElementName=richEditControl1, Path=Content, Converter={StaticResource ContentPlainConverter}, Mode=OneWay}" 
-            x:Name="textBox1" Grid.Column="1" Height="Auto" Width="Auto" />
+            x:Name="textBox1" Grid.Column="1" Height="Auto" Width="Auto"/>
     </Grid>
     <!--endregion #1-->
 </Window>
