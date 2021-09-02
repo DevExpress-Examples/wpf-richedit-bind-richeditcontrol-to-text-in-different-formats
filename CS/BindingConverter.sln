@@ -1,5 +1,5 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingConverter", "BindingConverter\BindingConverter.csproj", "{6F3A0737-065F-457B-8523-8AA66A7755AC}"
 EndProject
 Global
